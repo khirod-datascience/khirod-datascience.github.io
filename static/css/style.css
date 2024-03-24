@@ -101,6 +101,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
+
 #header .social-links a {
   font-size: 16px;
   display: flex;
@@ -118,6 +119,10 @@ h1, h2, h3, h4, h5, h6 {
 #header .social-links a:hover {
   background: #18d26e;
 }
+#header .skills {
+  margin-top: 40px;
+ 
+}
 
 @media (max-width: 992px) {
   #header h1 {
@@ -131,6 +136,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 15px;
   }
   #header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #header .skills {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -282,6 +292,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-top .social-links, #header.header-top h2 {
+  display: none;
+}
+
+
+#header.header-top .skills {
   display: none;
 }
 
@@ -1177,4 +1192,8 @@ section .container {
 
 .credits a:hover {
   color: #fff;
+}
+
+.form-control {
+  background-color: black;
 }
