@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: relative;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
@@ -310,9 +310,9 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-#header.header-top .nav-menu {
+/* #header.header-top .nav-menu {
   margin: 0;
-}
+} */
 
 @media (max-width: 768px) {
   #header.header-top {
@@ -327,12 +327,12 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  overflow: hidden;
-  position: absolute;
+  /* overflow: hidden; */
+  /* position: absolute; */
   width: 100%;
   top: 140px;
   bottom: 100%;
-  opacity: 0;
+  /* opacity: 0; */
   transition: ease-in-out 0.4s;
   z-index: 2;
 }
@@ -381,7 +381,7 @@ section .container {
 
 .section-title p {
   margin: 0;
-  margin: -15px 0 15px 0;
+  margin: 30px 0 15px 0;
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1196,4 +1196,26 @@ section .container {
 
 .form-control {
   background-color: black;
+}
+
+
+/* ------------------------------------------- */
+
+.navbar1 {
+  background-color: transparent;
+  
+  width: 100%; 
+  z-index: 1000; 
+  transition: background-color 0.3s;
+}
+
+.navbar1.scrolled {
+  background-color: #333; 
+  margin-top: -25px;
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  margin-left: 25%;
+  width: 784px;
+  border-radius: 10px;
 }

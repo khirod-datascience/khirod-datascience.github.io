@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif,"CMU Serif", sans-serif, Helvetica, Arial;
+  }
+  name {
+    font-family: "CMU Serif", sans-serif, Helvetica, Arial;
+    font-size: 32px;
+}
+body,  p, a {
+    font-family: 'CMS', 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+  .nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    /* list-style:none; */
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+.border{
+    border:1px solid #ccc;
+    border-width:1px 0;
+}
+/* .nav li{
+    display:inline;
+} */
+.nav a{
+    display:inline-block;
+    padding:10px;
+    color: #37306B;
+}
+
+.container{
+    width: 66%;
+}
+@media screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+
+}

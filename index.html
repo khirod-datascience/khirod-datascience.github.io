@@ -29,7 +29,7 @@
 
   <!-- =======================================================
   * Template Name: KHIROD BEHERA Personal 
-  * Author: khirod
+  * Author: Khirod
   ======================================================== -->
 </head>
 
@@ -37,6 +37,7 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header-tops">
+    <!-- <header > -->
     <div class="container">
  
  
@@ -45,7 +46,9 @@
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
       <h2>I'm a passionate <span>Software-Engineer</span></h2>
 
-      <nav class="nav-menu d-none d-lg-block">
+      <!-- <nav class="nav-menu d-none d-lg-block"> -->
+        <div class="navbar1" id="navbar1">
+        <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -56,6 +59,7 @@
 		  <li><a href="https://khirod-blog.blogspot.com/">Blog</a></li>
         </ul>
       </nav><!-- .nav-menu -->
+    </div>
 
       <div class="social-links">
         <a href="https://twitter.com/beherakhirod015" class="twitter"><i class="icofont-twitter"></i></a>
@@ -123,7 +127,7 @@
 
 
 
-    </div>
+    
 
 
   </header><!-- End Header -->
@@ -859,7 +863,7 @@ contributing to interdisciplinary teams for data-driven decision-making.
 
     </div>
   </section><!-- End Contact Section -->
-
+</div>
  <script type="text/javascript">var submitted=false;</script>
     
     <!--Update the URL for thank you page on form submit -->
@@ -925,6 +929,16 @@ contributing to interdisciplinary teams for data-driven decision-making.
     });
     </script>
     
+<script>
+    window.onscroll = function() {
+      const navbar = document.getElementById("navbar1");
+      if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
+          navbar.classList.add("scrolled");
+      } else {
+          navbar.classList.remove("scrolled");
+      }
+  };
+</script>
 </body>
 
 </html>
