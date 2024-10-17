@@ -8,11 +8,6 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@media (pointer: coarse) {
-	.rollover{
-		background-attachment: scroll !important;
-	} 
-}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -40,6 +35,15 @@ body::before {
   }
 }
 
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1.5) 
+and (orientation: landscape) {
+  body::before {
+    background-attachment: scroll; /* Adjust if needed */
+  }
+}
 a {
   color: #18d26e;
 }
