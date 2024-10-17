@@ -8,6 +8,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
@@ -34,6 +35,15 @@ body::before {
   }
 }
 
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1.5) 
+and (orientation: landscape) {
+  body::before {
+    background-attachment: scroll; /* Adjust if needed */
+  }
+}
 a {
   color: #18d26e;
 }
@@ -138,12 +148,13 @@ h1, h2, h3, h4, h5, h6 {
   #header .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    #align-items: center;
   }
   #header .skills {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    #align-items: center;
+    width: 50%;
   }
 }
 
